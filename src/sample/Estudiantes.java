@@ -7,7 +7,7 @@ package sample;
 
 public abstract class Estudiantes {
     //Ejemplo de encapsulación y Atributos
-    protected int Carné;
+    protected int Carne;
     protected String Nombre;
     protected String Correo;
     protected int Telefono;
@@ -25,7 +25,7 @@ public abstract class Estudiantes {
 
     /**
      * Metetodo constructor
-     * @param carne int numero de carné del estudiante
+     * @param carne int numero de carne del estudiante
      * @param nombre String Nombre completo del estudiante con sus apellidos
      * @param correo String Correo electrónico del estudiante
      * @param telefono int Teléfono del estudiante
@@ -39,7 +39,7 @@ public abstract class Estudiantes {
      * @param proyecto3 Double nota del proyecto #3
      */
     public Estudiantes(int carne, String nombre, String correo, int telefono, String tipo, String nickname, double promedio_exam, double promedio_quices, double promedio_tareas, double proyecto1, double proyecto2, double proyecto3) {
-        this.Carné = carne;
+        this.Carne = carne;
         this.Nombre = nombre;
         this.Correo = correo;
         this.Telefono = telefono;
@@ -65,11 +65,11 @@ public abstract class Estudiantes {
     }
 
     /**
-     * Método que obtiene el carné del estudiante
-     * @return el valor del atributo carné
+     * Método que obtiene el carne del estudiante
+     * @return el valor del atributo carne
      */
-    public int getCarné() {
-        return Carné;
+    public int getCarne() {
+        return Carne;
     }
 
     /**

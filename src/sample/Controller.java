@@ -7,11 +7,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.FileChooser;
-
-import javax.swing.*;
-import java.awt.event.ActionEvent;
 import java.io.File;
-import java.util.ArrayList;
+
 
 import static sample.Leercvs.lista;
 
@@ -41,10 +38,6 @@ public class Controller {
     @FXML private TableColumn<Estudiantes,Double> prom_all;
     @FXML private TableColumn<Estudiantes,Double> prom_proyec;
     @FXML private TableColumn<Estudiantes,Double> notaFinal_cl;
-
-    public void borrar(){
-        lista.clear();
-    }
 
     /**
      * Método que abre un explorador de archivos y permite seleccionar la ruta del archivo por abrir
@@ -76,7 +69,7 @@ public class Controller {
         }
         ObservableList<Estudiantes> lista_Observable = FXCollections.observableArrayList(lista);
 
-        carne_cl.setCellValueFactory(new PropertyValueFactory<Estudiantes,Integer>("Carné"));
+        carne_cl.setCellValueFactory(new PropertyValueFactory<Estudiantes,Integer>("Carne"));
         nombrecl.setCellValueFactory(new PropertyValueFactory<Estudiantes,String>("Nombre"));
         correocl.setCellValueFactory(new PropertyValueFactory<Estudiantes,String>("Correo"));
         telefonocl.setCellValueFactory(new PropertyValueFactory<Estudiantes,Integer>("Telefono"));

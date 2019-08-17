@@ -12,6 +12,10 @@ import static sample.Controller.archivo;
 public class Leercvs {
     private String csv = archivo;
 
+    /**
+     * Método que actualiza el atributo csv
+     * @param archivo contiene la ruta
+     */
     public void setCsv(String archivo){
         this.csv = archivo;
 
@@ -72,6 +76,10 @@ public class Leercvs {
         }
 
     }
+
+    /**
+     * Método que borra los elementos en la lista
+     */
     public void reset(){
         lista.clear();
     }

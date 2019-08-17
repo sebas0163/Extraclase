@@ -33,7 +33,6 @@ public class EstudianteA extends Estudiantes {
     @Override
     public void calcularPromedios() {
         promedio_Examenes = (Promedio_exam +Promedio_quices + Promedio_tareas)/ 3;
-        promedioProyectos = 0.0;
 
     }
 
