@@ -41,7 +41,6 @@ public class Leercvs {
                         String datos [];
                         datos = text.split(";");
                         int carne = Integer.parseInt(datos[0]);
-                        System.out.println(carne);
                         String nombre = datos[1];
                         String correo = datos[2];
                         int telefono = Integer.parseInt(datos[3]);
